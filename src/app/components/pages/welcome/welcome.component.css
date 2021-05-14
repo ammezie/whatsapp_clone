@@ -1,0 +1,4 @@
+.main-content {
+  z-index: 9999999;
+  display: flex;
+}

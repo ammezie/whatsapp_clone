@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+.bg {
+  background-color: #1ebea5 !important;
+  height: 100vh;
+}
+.btn-primary {
+  background-color: #1ebea5;
+}
+.btn {
+  border: 1px solid #1ebea5;
+}
+.btn:hover {
+  background-color: #1cab94;
+  border: 1px solid #1cab94;
+}
+.login-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+.card {
+  margin: 10% auto 0 auto !important;
+  border: 0;
+  box-shadow: 0 17px 50px 0 rgb(0 0 0 / 19%), 0 12px 15px 0 rgb(0 0 0 / 24%);
+  padding: 64px 35px 110px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-floating > .form-control:-webkit-autofill {
+  padding-top: 2.625rem;
+  padding-bottom: 1.625rem;
+}
+.btn-group-lg > .btn,
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
+  border-radius: 0.3rem;
+}
+.login-img {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-primary {
+  color: #1cab94 !important;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 415px) {
+  .card {
+    padding: 10px;
+    margin: 30% auto 0 auto !important;
+  }
+}

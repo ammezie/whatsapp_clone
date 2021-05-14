@@ -1,0 +1,73 @@
+<div class="login-page bg">
+  <div class="row">
+    <div class="card col-10 col-sm-4">
+      <div class="card-body">
+        <form>
+          <form class="form-floating">
+            <div class="login-img mb-5">
+              <img src="/assets/logo.png" alt="" height="70" />
+              <h3 class="text-primary"><b>REGISTER</b></h3>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="registerData.username"
+                name="username"
+                id="floatingInput"
+                placeholder="John Doe"
+              />
+              <label for="floatingInput">Username</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                [(ngModel)]="registerData.email"
+                name="email"
+                id="floatingInput"
+                placeholder="johndoe@mail.com"
+              />
+              <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                [(ngModel)]="registerData.phone"
+                name="phone"
+                id="floatingInput"
+                placeholder="+234"
+              />
+              <label for="floatingInput">Phone number</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                [(ngModel)]="registerData.password"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div id="emailHelp" class="form-text mt-3">
+              <b
+                >Already have an account?
+                <a href="" routerLink="/auth/login" class="text-primary"
+                  >Log In</a
+                >.</b
+              >
+            </div>
+          </form>
+          <div class="d-grid gap-2 mt-4">
+            <button class="btn btn-primary btn-lg" type="submit" (click)="register()">
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

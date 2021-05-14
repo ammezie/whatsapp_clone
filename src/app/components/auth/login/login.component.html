@@ -1,0 +1,51 @@
+<div class="login-page bg">
+  <div class="row">
+    <div class="card col-10 col-sm-4">
+      <div class="card-body">
+        <form>
+          <form class="form-floating">
+            <div class="login-img mb-5">
+              <img src="/assets/logo.png" alt="" height="70" />
+              <h3 class="text-primary"><b>Log In</b></h3>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="tel"
+                class="form-control"
+                [(ngModel)]="loginData.phone"
+                name="phone"
+                id="floatingInput"
+                placeholder="+234"
+              />
+              <label for="floatingInput">Phone number</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                [(ngModel)]="loginData.password"
+                name="password"
+                class="form-control"
+                id="floatingPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div id="emailHelp" class="form-text mt-3">
+              <b
+                >New Here?
+                <a href="" routerLink="/auth/register" class="text-primary"
+                  >Create account</a
+                >.</b
+              >
+            </div>
+          </form>
+          <div class="d-grid gap-2 mt-4">
+            <button class="btn btn-primary btn-lg" type="submit" (click)="login()">
+              Sign In
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
